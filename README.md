@@ -1,7 +1,7 @@
 # nosql-challenge
 Data Bootcamp Module 12 Challenge
 
-<img src="https://pbs.twimg.com/profile_images/1334500003/eatcravelove_logo_twitter_400x400.jpg" jsaction="VQAsE" class="r48jcc pT0Scc iPVvYb" style="max-width: 400px; height: 400px; margin: 0px; width: 400px;" alt="Eat Crave Love on X: &quot;Lack of free wifi service is driving me mental. Lots  of new food photos to post soon. xo&quot; / X" jsname="kn3ccd" aria-hidden="false">
+<img src="https://pbs.twimg.com/profile_images/1334500003/eatcravelove_logo_twitter_400x400.jpg" jsaction="VQAsE" class="r48jcc pT0Scc iPVvYb" style="max-width: 300px; height: 300px; margin: 0px; width: 300px;" alt="Eat Crave Love jsname="kn3ccd" aria-hidden="false">
 
 # Instructions
 
