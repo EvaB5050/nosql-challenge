@@ -25,7 +25,7 @@ The UK Food Standards Agency evaluates various establishments across the United 
 
 4. Confirm that the database has been created and loaded the data properly.
 
-Assign the `establishments` collection to a variable to prepare the collection for use.
+5. Assign the `establishments` collection to a variable to prepare the collection for use.
 
 # Part 2: Update the Database
 ### `NoSQL_setup.ipynb`
@@ -68,17 +68,17 @@ Add the following information to the database:
 }
 ```
 
-2. Find the BusinessTypeID for "Restaurant/Cafe/Canteen" and return only the BusinessTypeID and BusinessType fields.
+2. Find the BusinessTypeID for "Restaurant/Cafe/Canteen" and return only the `BusinessTypeID` and `BusinessType` fields.
 
-3. Update the new restaurant with the BusinessTypeID found.
+3. Update the new restaurant with the `BusinessTypeID` found.
 
 4. The magazine is not interested in any establishments in Dover, so check how many documents contain the Dover Local Authority. 
-Then, remove any establishments within the Dover Local Authority from the database.
+   Remove any establishments within the Dover Local Authority from the database.
 
 5. Some of the number values are stored as strings, when they should be stored as numbers.
 
-* Use `update_many` to convert latitude and longitude to decimal numbers.
-* Use `update_many` to convert RatingValue to integer numbers.
+   * Use `update_many` to convert `latitude` and `longitude` to decimal numbers.
+   * Use `update_many` to convert `RatingValue` to integer numbers.
 
 # Part 3: Exploratory Analysis
 ### `NoSQL_analysis.ipynb`
@@ -89,27 +89,27 @@ Then, remove any establishments within the Dover Local Authority from the databa
 + *`RatingValue` refers to the overall rating decided by the Food Authority and ranges from 1-5.* 
     *The higher the value, the better the rating.*
 + *The scores for Hygiene, Structural, and ConfidenceInManagement are reversed. 
-    *The higher the value the worse the establishment is in these areas*
+    The higher the value the worse the establishment is in these areas.*
 
 Unless otherwise stated, for each question:
+    
+  * Use `count_documents` to display the number of documents contained in the result.
 
-    * Use count_documents to display the number of documents contained in the result.
+  * Display the first document in the results using `pprint`.
 
-    * Display the first document in the results using `pprint`.
-
-* Convert the result to a Pandas DataFrame, print the number of rows in the DataFrame, and display the first 10 rows.
+  * Convert the result to a Pandas DataFrame, print the number of rows in the DataFrame, and display the first 10 rows.
 
 
-1. Which establishments have a hygiene score equal to 20?
+#### 1. Which establishments have a hygiene score equal to 20?
 
-2. Which establishments in London have a RatingValue greater than or equal to 4?
+#### 2. Which establishments in London have a RatingValue greater than or equal to 4?
 
-*Hint: The London Local Authority has a longer name than "London" so need to use `$regex` as part of your search.*
+  *Hint: The London Local Authority has a longer name than "London" so need to use `$regex` as part of your search.*
 
-3. What are the top 5 establishments with a `RatingValue` of '5', sorted by lowest hygiene score, nearest to the new restaurant added, "Penang Flavours"?
+#### 3. What are the top 5 establishments with a `RatingValue` of '5', sorted by lowest hygiene score, nearest to the new restaurant added, "Penang Flavours"?
 
-*Hint: Compare the geocode to find the nearest locations. Search within 0.01 degree on either side of the latitude and longitude.*
+  *Hint: Compare the geocode to find the nearest locations. Search within 0.01 degree on either side of the latitude and longitude.*
 
-4. How many establishments in each Local Authority area have a hygiene score of 0? Sort the results from highest to lowest, and print out the top ten local authority areas.
+#### 4. How many establishments in each Local Authority area have a hygiene score of 0? Sort the results from highest to lowest, and print out the top ten local authority areas.
 
-*Hint: Use the `aggregation` method to answer this.*
+  *Hint: Use the `aggregation` method to answer this.*
