@@ -37,6 +37,7 @@ Make the following changes to the `establishments` collection:
 The magazine has asked for it to be included in the analysis. 
 Add the following information to the database:
 
+```
 {
     "BusinessName":"Penang Flavours",
     "BusinessType":"Restaurant/Cafe/Canteen",
@@ -65,6 +66,7 @@ Add the following information to the database:
     "Distance":4623.9723280747176,
     "NewRatingPending":True
 }
+```
 
 2. Find the BusinessTypeID for "Restaurant/Cafe/Canteen" and return only the BusinessTypeID and BusinessType fields.
 
